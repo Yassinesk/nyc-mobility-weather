@@ -119,6 +119,5 @@ def main():
     print(f"Courses retenues : {nb_taxis:,} sur {len(df_taxi):,}")
     print(f"Chargement réussi : {nb_meteo:,} lignes météo et {nb_taxis:,} courses.")
 
-
 if __name__ == "__main__":
     main()

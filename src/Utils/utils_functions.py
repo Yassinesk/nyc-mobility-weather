@@ -1,6 +1,6 @@
 import pandas as pd
 import requests
-
+from psycopg import sql
 #==========Useful functions ===================================================
 
 #read taxi data
@@ -37,8 +37,7 @@ def creer_cle_horaire(df):
         + "-" + df["hour_of_day"].astype("Int64").astype("string").str.zfill(2)
     )
 
-import pandas as pd
-from psycopg import sql
+
 
 
 def load_data(connexion, df, table):
